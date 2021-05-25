@@ -1,3 +1,77 @@
-nav > ul {
+body{
+    background-color: lightgreen;
+    margin: 0;
+}
+
+nav{
+    grid-area: nav;
+}
+nav ul {
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: blue;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: yellow;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #0000b3;
+}
+
+main{
+    grid-area: main;
+    padding: 40px 0px;
+    background-color: limegreen;
+}
+
+header{
+    grid-area: head;
+}
+
+footer{
+    grid-area: foot;
+    background-color: darkgreen;
+    padding: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 327px 46.25px auto;
+    grid-template-areas:    "logo head head"
+                            "nav  nav  nav"
+                            ".    main ."
+                            "foot foot foot";
+}
+
+.logo{
+    width: 100%;
+    grid-area: logo;
+}
+
+.header-image{
+    max-width: 100%;
+}
+
+.footer-item{
+    width: 22%;
+    margin: 1%;
+    display: inline-block;
+}
+
+
+#join{
+    float: right;
 }
